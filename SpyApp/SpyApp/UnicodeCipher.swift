@@ -25,8 +25,8 @@ struct UnicodeCipher: Cipher {
         
         for character in encrypted {
             let encrypted = character.unicodeScalars.first!.value
-            let normalharacter = String(UnicodeScalar(UInt8(encrypted)))
-            decoded = decoded + normalharacter
+            let normalcharacter = String(UnicodeScalar(UInt8(encrypted)))
+            decoded = decoded + normalcharacter
         }
         return decoded
     }
