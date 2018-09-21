@@ -1,7 +1,7 @@
 
 import Foundation
 
-protocol Extended: Cipher {
+protocol cipher2: Cipher {
     func encode(_ plaintext: String, secret: String) -> String?
     func decrypt(_ encrypted: String, secret: String) -> String?
     
